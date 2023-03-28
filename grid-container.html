@@ -4,16 +4,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@700&display=swap" rel="stylesheet">
+  <title>Grid Container</title>
   <style>
+    body {
+      margin: 0px;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      height: 100vh;
+    }
+
     .grid-container {
       display: grid;
       width: 1000px;
       height: 600px;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(4, 1fr);
-      margin: 100px;
-      justify-self: center;
+      /* margin: 100px; */
+      font-family: 'Trispace', sans-serif;
+    }
+
+    .grid-container > div {
+      display: grid;
+      align-content: center;
+      justify-content: center;
+      font-size: 50px;
     }
 
     .grid-item:nth-child(1){
@@ -47,11 +65,11 @@
 </head>
 <body>
   <div class="grid-container">
-    <div class="grid-item">A</div>
-    <div class="grid-item">B</div>
-    <div class="grid-item">C</div>
-    <div class="grid-item">D</div>
-    <div class="grid-item">E</div>
+    <div class="grid-item">Header</div>
+    <div class="grid-item">Navbar</div>
+    <div class="grid-item">Main</div>
+    <div class="grid-item">Sidebar</div>
+    <div class="grid-item">Footer</div>
   </div>
 </body>
 </html>
