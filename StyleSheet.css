@@ -1,0 +1,58 @@
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Trispace', sans-serif;
+  height: 100vh;
+  margin: 0px;
+}
+
+.container {
+  display: grid;
+  width: 1400px;
+  height: 500px;
+  grid-gap: 15px;
+  margin-bottom: 150px;
+  grid-template-columns: repeat(4, auto);
+  background-color: blanchedalmond;
+}
+
+.item {
+  background-color: black;
+  width: 150px;
+  height: 150px;
+  color: white;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-size: 50px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  border: 10px solid gold;
+ 
+}
+
+.item:hover {
+  background-color: gold;
+  color: black;
+  font-size: 100px;
+}
+
+.one {
+  justify-content: start;
+
+}
+
+.two {
+  justify-content: space-around;
+}
+
+
+.three {
+  justify-content:  space-between;
+}
+
+.four {
+  justify-content: end;
+}
