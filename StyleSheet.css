@@ -30,7 +30,6 @@ body {
   box-sizing: border-box;
   transition: 0.3s;
   border: 10px solid gold;
- 
 }
 
 .item:hover {
